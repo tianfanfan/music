@@ -190,5 +190,5 @@ a {
   padding: 0;
 }
 #j-validator {
-  display: block;
+  display: block !important;
 }
