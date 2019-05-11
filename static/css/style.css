@@ -189,3 +189,6 @@ a {
 .aplayer.aplayer-withlist .aplayer-list-hide {
   padding: 0;
 }
+#j-validator {
+  display: block;
+}
