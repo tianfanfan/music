@@ -60,7 +60,7 @@ if (!defined('MC_CORE')) {
         <div class="am-container am-margin-vertical-xl">
             <header class="am-padding-vertical">
                 <h2 class="about-title about-color">音乐搜索器</h2>
-                <p class="am-text-center">多站合一音乐搜索解决方案</p>
+                <!-- <p class="">多站合一音乐搜索解决方案</p> -->
             </header>
             <hr>
             <div class="am-u-lg-12 am-padding-vertical">
@@ -78,10 +78,10 @@ if (!defined('MC_CORE')) {
                             </li>
                         </ul>
                         <div class="am-form-group">
-                            <input id="j-input" data-filter="name" class="am-form-field am-input-lg am-text-center am-radius" placeholder="例如: 不要说话 陈奕迅" data-am-loading="{loadingText: ' '}" pattern="^.+$" required>
+                            <input id="j-input" data-filter="name" class="am-form-field am-input-lg am-radius" placeholder="例如: 不要说话 陈奕迅" data-am-loading="{loadingText: ' '}" pattern="^.+$" required>
                             <div class="am-alert am-alert-danger am-animation-shake"></div>
                         </div>
-                        <div id="j-type" class="am-form-group am-text-center music-type">
+                        <div id="j-type" class="am-form-group music-type">
                         <?php foreach ($music_type_list as $key => $val) { ?>
                             <label class="am-radio-inline">
                                 <input type="radio" name="music_type" value="<?php echo $key; ?>" data-am-ucheck<?php if ($key === 'netease') echo ' checked'; ?>>
@@ -90,7 +90,7 @@ if (!defined('MC_CORE')) {
                             <?php if ($key === 'migu') echo '<br />'; ?>
                         <?php } ?>
                         </div>
-                        <button id="j-submit" type="submit" class="am-btn am-btn-primary am-btn-lg am-btn-block am-radius" data-am-loading="{spinner: 'cog', loadingText: '正在搜索相关音乐...', resetText: 'Get &#x221A;'}">Get &#x221A;</button>
+                        <button id="j-submit" type="submit" class="am-btn am-btn-primary am-btn-lg am-btn-block am-radius" data-am-loading="{spinner: 'cog', loadingText: '正在搜索相关音乐...', resetText: 'Get &#x221A;'}">Search &#x221A;</button>
                     </div>
                 </form>
                 <form id="j-main" class="am-form am-u-md-12 am-u-sm-centered music-main">
@@ -157,7 +157,7 @@ if (!defined('MC_CORE')) {
                     </div>
                 </form>
                 <div class="am-u-md-12 am-u-sm-centered am-margin-vertical music-tips">
-                    <h4>帮助：</h4>
+                    <h4>音乐地址搜索方案帮助：</h4>
                     <p><b>标红</b> 为 <strong>音乐 ID</strong>，<u>下划线</u> 表示 <strong>音乐地址</strong></p>
                     <ul>
                         <li>蜻蜓 FM 的音乐 ID 需要使用 <code>| (管道符)</code> 组合，例如 <code>158696|5266259</code></li>
@@ -198,9 +198,6 @@ if (!defined('MC_CORE')) {
             </div>
         </div>
     </section>
-    <footer class="footer">
-        <p class="am-text-sm">v<?php echo MC_VERSION; ?>&nbsp;&copy;&nbsp;<?php echo date('Y'); ?>&nbsp;<a href="https://github.com/maicong/music/releases" target="_blank" rel="author">源码下载</a>&nbsp;<a href="https://github.com/maicong/music/issues" target="_blank">意见反馈</a>&nbsp;<a href="javascript:void(0)" data-am-modal="{target: '#copr-info'}">免责声明</a></p>
-    </footer>
     <script src="//cdn.staticfile.org/jquery/1.11.1/jquery.min.js"></script>
     <script src="//cdn.staticfile.org/amazeui/2.3.0/js/amazeui.min.js"></script>
     <script src="//cdn.staticfile.org/aplayer/1.6.0/APlayer.min.js"></script>

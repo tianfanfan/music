@@ -227,7 +227,7 @@ $(function() {
                   setValue(playerList[0]);
 
                   $('#j-validator').slideUp();
-                  $('#j-main').slideDown();
+                  // $('#j-main').slideDown();
 
                   player = new APlayer({
                     element: $('#j-player')[0],
@@ -336,7 +336,7 @@ $(function() {
     if (player) {
       player.pause();
     }
-    $('#j-validator').slideDown();
+    // $('#j-validator').slideDown();
     $('#j-main').slideUp();
     $('#j-main input').val('');
     document.title = siteTitle;

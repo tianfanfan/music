@@ -45,7 +45,7 @@ function mc_curl($args = [])
     $curl = new Curl();
     $curl->setUserAgent($args['user-agent']);
     $curl->setReferrer($args['referer']);
-    $curl->setTimeout(15);
+    $curl->setTimeout(40);
     $curl->setHeader('X-Requested-With', 'XMLHttpRequest');
     $curl->setOpt(CURLOPT_FOLLOWLOCATION, true);
     if ($args['proxy'] && MC_PROXY) {
